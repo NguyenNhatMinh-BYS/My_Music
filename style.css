@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    
+    font-family:  'Poppins';
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30); 
+    /* change */
+    /* background: #8e9eab;   */
+    /* background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);   */
+    /* background: linear-gradient(to right, #eef2f3, #8e9eab); */
+
+}
+header{
+    display: flex;
+    color: aliceblue;
+}
+.playList{
+    height: 100vh;
+    width: 22%;
+    background-color: #141E30;
+    transition: all linear 0.25s;
+}
+.songMusic{
+    height: 100vh;
+    width: 78%;
+    background-color: #243B55;
+}
+.songMusic .bi-list{
+    margin: 20px;
+    position: absolute;
+    font-size: 24px;
+}
+.playList_text{
+    display: flex;
+    font-size: 25px;
+    padding: 16px 16px;
+    
+    height: 160px;
+}
+.playList_text_playList{
+    flex-grow: 1;
+}
+.playList_music{
+display: flex;
+justify-content: center;
+color: rgb(110, 211, 255);
+height: 60px;
+}
+.bi-music-note-beamed{
+padding-right: 10px;
+font-size: 18px;
+}
+.playList_music_text{
+    font-size: 18px;
+    
+}
+.playList_lists{
+    
+}
+.playList_lists_item{
+    display: flex;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+    /* border-bottom: 1px solid #707791; */
+}
+.playList_lists_item_number{
+    padding: 0 6px;
+    align-self: center;
+    color: #707791;
+}
+.playList_lists_item_content{
+    display: flex;
+    justify-content: start;
+    padding: 0 6px;
+    flex-grow: 1;
+    
+}
+.play{
+    border-bottom: 1px solid white;
+
+}
+.playList_lists_item_img{
+    width: 32px;
+    height: 32px;
+    padding-right: 6px;
+    align-self: center;
+}
+.playList_lists_item_content_info{
+    font-size: 16px;
+}
+.playList_lists_item_content_info_music{
+    
+}
+.playList_lists_item_content_info_author{
+    font-size: 10px;
+    color: #707791;
+}
+.playList_lists_item_control{
+    padding: 0 10px 0 6px;
+    align-self: center;
+    
+    
+}
+.bi-play-circle-fill{
+    font-size: 26px;
+}
+.listPlayButton{
+    font-size: 26px;
+
+}
+.poiter{
+    color: aliceblue;
+}  
+.songMusic{
+    /* display: flex; */
+    position: relative;
+}
+.songMusic_infor_author{
+    width: 60%;
+    margin-left: 60px;
+    margin-top: 50px;
+    animation: reload linear 1s;
+    position: relative;
+    z-index: 1;
+    height: 30%;
+}
+@keyframes reload{
+    0%{
+        opacity: 0;
+        margin-left: 0px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 60px;
+    }
+}
+
+.songMusic_infor_author_name{
+    font-size: 30px;
+    
+}
+
+.reload_animation{
+    animation: reload linear 1s;
+}
+.songMusic_infor_author_delta{
+    margin-left: 6px;
+    margin-top: 6px;
+    color: #707791;
+    
+}
+.songMusic_infor_author_follow{
+    /* background-color: rgb(110, 211, 255); */
+    border: 1px solid  rgb(110, 211, 255);;
+    display: inline-block;
+    border-radius: 20px;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    line-height:40px ;
+    font-size: 16px;
+    margin: 20px 0 ;
+    color: rgb(110, 211, 255); 
+    cursor: pointer;
+}
+.songMusic_infor_author_follow:hover{
+    background-color: rgb(110, 211, 255);
+    color: white;
+}
+.songMusic_play{
+    width: 100%;
+    
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    transition: all linear 0.5s;
+    
+}
+.songMusic_play_bg{
+    width: 400px;
+    height: 480px;
+    background-color:rgb(121, 206, 252);
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    transition: all linear 0.5s;
+}
+.songMusic_avarta{
+    
+    
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    animation: inpage linear 1s;
+   z-index: 0;
+}
+.songMusic_avarta img{
+    
+    height: 340px; 
+    box-shadow: 18px 18px 16px 0px #30547e8a;
+   
+    /* animation: inpage linear 2s; */
+    z-index: 0;
+}
+@keyframes inpage{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.none{
+    display: none;
+}
+.songMusic_play_bg_header{
+    display: block;
+    text-align: center;
+    
+}
+h1{
+    font-size: 16px;
+}
+h3{
+    font-size: 20px;
+    color:#243B55;
+}
+.songMusic_play_bg_cd{
+    margin-top: 20px;
+    /* background-color: red; */
+    display: inline-block;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    
+   
+    
+}
+.songMusic_play_bg_cd img{
+    /* display: none; */
+    border-radius: 50%;
+}
+.songMusic_play_bg_control{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.songMusic_play_bg_control_repeat{
+    cursor: pointer;
+     font-size: 26px;
+     color: #243B55;
+}
+.songMusic_play_bg_control_prev{
+    font-size: 24px;
+    color:#243B55;
+    cursor: pointer;
+   
+    line-height: 24px;
+   
+   
+}
+.songMusic_play_bg_control_change{
+    cursor: pointer;
+
+    font-size: 34px;
+    color: white;
+    background-color:#243B55;
+    padding: 10px 14px 0 14px;
+    border-radius: 50%;
+}
+.songMusic_play_bg_control_next{
+    font-size: 24px;
+    color: #243B55;
+    cursor: pointer;
+   
+    line-height: 24px;
+   
+    
+}
+.songMusic_play_bg_control_random{
+    font-size: 26px;
+
+    cursor: pointer;
+    color: #243B55;
+}
+.random{
+    color: white;
+}
+.progress{
+    position: relative;
+    top: 20px;
+    width: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+    background: #141E30;
+}
+.animation_click{
+    animation: alls linear 1s;
+    opacity: 0;
+ }
+ @keyframes alls{
+    100%{
+        opacity: 1;
+    }
+    
+ }
+ 
+ .widthMax{
+    width: 100%;
+ }
+ .opacity{
+    position: absolute;
+   z-index: 8;
+   opacity: 0;
+   transform: translatex(-200px);
+    pointer-events: none;
+ }
+ .bi-list{
+    cursor: pointer;
+ }
